@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative; /* Cabeçalho fixo em tabela */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+}
+
+thead, tfoot {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+thead > tr > th {
+    /* Cabeçalho fixo em tabela */
+    position: sticky;
+    top: -1px;
+    background-color: rgb(51, 51, 51);
+}
+
+td.num {
+    text-align: right;
+}
+
+/* Efeito zebrado */
+tbody > tr:nth-child(odd) { /* 2n-1 */
+    background-color: white;
+}
+
+tbody > tr:nth-child(even) { /* 2n */
+    background-color: lightgray;
+}
